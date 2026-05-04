@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:sdtc="urn:hl7-org:sdtc"
+  xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="CBCCD057-7FC6-44AF-92A2-6D215D64AFA6"/>
+  <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+        displayName="Summarization of Episode Note"/>
+  <title>Continuity of Care Document</title>
+  <effectiveTime value="20250217000000"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.19.5.99999.2" extension="MRN746624"/>
+      <addr use="HP">
+        <streetAddressLine>3303 Pine St</streetAddressLine>
+        <city>Springfield</city>
+        <state>CA</state>
+        <postalCode>49932</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom use="HP" value="tel:206-505-6443"/>
+      <patient>
+        <name use="L">
+          <given>Thomas</given>
+          <family>Davis</family>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male"/>
+        <birthTime value="19440322"/>
+        <raceCode code="2028-9" codeSystem="2.16.840.1.113883.6.238" displayName="Asian"/>
+        <languageCommunication>
+          <languageCode code="en"/>
+          <preferenceInd value="true"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20250217000000"/>
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.4.6" extension="NPI7890123"/>
+      <assignedPerson>
+        <name>Grace Liu</name>
+      </assignedPerson>
+      <representedOrganization>
+        <name>Outpatient Care Center</name>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.113883.19.5.99999.1"/>
+        <name>Outpatient Care Center</name>
+        <telecom use="WP" value="tel:555-555-5000"/>
+        <addr>
+          <streetAddressLine>100 Health Way</streetAddressLine>
+          <city>Springfield</city>
+          <state>CA</state>
+          <postalCode>49932</postalCode>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <component>
+    <structuredBody>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+        <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" displayName="Problem List"/>
+        <title>Problem List</title>
+        <text>
+          <table border="1" width="100%">
+            <thead><tr><th>Condition</th><th>Code</th><th>System</th><th>Onset</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Z34-00</td><td>Z34.00</td><td>ICD-10-CM</td><td>August 22, 2023</td><td>active</td></tr>
+              <tr><td>Z34-01</td><td>Z34.01</td><td>ICD-10-CM</td><td>February 14, 2024</td><td>active</td></tr>
+              <tr><td>Z34-02</td><td>Z34.02</td><td>ICD-10-CM</td><td>January 04, 2024</td><td>active</td></tr>
+              <tr><td>Z34-03</td><td>Z34.03</td><td>ICD-10-CM</td><td>February 25, 2023</td><td>active</td></tr>
+              <tr><td>Z39-1</td><td>Z39.1</td><td>ICD-10-CM</td><td>August 03, 2025</td><td>active</td></tr>
+              <tr><td>Z39-2</td><td>Z39.2</td><td>ICD-10-CM</td><td>March 05, 2024</td><td>active</td></tr>
+              <tr><td>F20-9</td><td>F20.9</td><td>ICD-10-CM</td><td>June 16, 2025</td><td>active</td></tr>
+              <tr><td>F31-9</td><td>F31.9</td><td>ICD-10-CM</td><td>August 19, 2024</td><td>active</td></tr>
+            </tbody>
+          </table>
+          
+        </text>
+      <entry typeCode="DRIV">
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+          <id root="906F54BE-EAFD-40C0-89A2-634596613C2D"/>
+          <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20230822"/><high value="20230822"/></effectiveTime>
+          <entryRelationship typeCode="SUBJ">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+              <id root="0AAFB6AA-D474-4315-9472-F4BCDBD898A9"/>
+              <code code="55607006" codeSystem="2.16.840.1.113883.6.96" displayName="Problem"/>
+              <statusCode code="completed"/>
+              <effectiveTime><low value="20230822"/><high value="20230822"/></effectiveTime>
+              <value xsi:type="CD" code="Z34.00" codeSystem="2.16.840.1.113883.6.90"
+                     codeSystemName="ICD-10-CM" displayName="Z34-00"/>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
+                  <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+        </act>
+      </entry>
+      <entry typeCode="DRIV">
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+          <id root="E59F275E-449C-4496-9F66-2E1FBB787D97"/>
+          <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20240214"/><high value="20240214"/></effectiveTime>
+          <entryRelationship typeCode="SUBJ">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+              <id root="05F1DEE7-3880-49C7-9767-EFCC88F56613"/>
+              <code code="55607006" codeSystem="2.16.840.1.113883.6.96" displayName="Problem"/>
+              <statusCode code="completed"/>
+              <effectiveTime><low value="20240214"/><high value="20240214"/></effectiveTime>
+              <value xsi:type="CD" code="Z34.01" codeSystem="2.16.840.1.113883.6.90"
+                     codeSystemName="ICD-10-CM" displayName="Z34-01"/>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
+                  <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+        </act>
+      </entry>
+      <entry typeCode="DRIV">
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+          <id root="6FAF7A1A-676C-46ED-8D90-7DEC2576CA36"/>
+          <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20240104"/><high value="20240104"/></effectiveTime>
+          <entryRelationship typeCode="SUBJ">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+              <id root="0587DD37-99BF-4877-88E9-00ACBA08A90B"/>
+              <code code="55607006" codeSystem="2.16.840.1.113883.6.96" displayName="Problem"/>
+              <statusCode code="completed"/>
+              <effectiveTime><low value="20240104"/><high value="20240104"/></effectiveTime>
+              <value xsi:type="CD" code="Z34.02" codeSystem="2.16.840.1.113883.6.90"
+                     codeSystemName="ICD-10-CM" displayName="Z34-02"/>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
+                  <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+        </act>
+      </entry>
+      <entry typeCode="DRIV">
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+          <id root="24511EA8-B7D0-44BF-B35D-3342FDBA9AAB"/>
+          <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20230225"/><high value="20230225"/></effectiveTime>
+          <entryRelationship typeCode="SUBJ">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+              <id root="BA2FB75D-57ED-4977-AE7F-5EAF4BDCF42A"/>
+              <code code="55607006" codeSystem="2.16.840.1.113883.6.96" displayName="Problem"/>
+              <statusCode code="completed"/>
+              <effectiveTime><low value="20230225"/><high value="20230225"/></effectiveTime>
+              <value xsi:type="CD" code="Z34.03" codeSystem="2.16.840.1.113883.6.90"
+                     codeSystemName="ICD-10-CM" displayName="Z34-03"/>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
+                  <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+        </act>
+      </entry>
+      <entry typeCode="DRIV">
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+          <id root="C7D770D4-43E5-49B1-BF8B-9974CC5E61A7"/>
+          <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20250803"/><high value="20250803"/></effectiveTime>
+          <entryRelationship typeCode="SUBJ">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+              <id root="14847FD0-5B70-44E3-BEAE-E87ECD8B7205"/>
+              <code code="55607006" codeSystem="2.16.840.1.113883.6.96" displayName="Problem"/>
+              <statusCode code="completed"/>
+              <effectiveTime><low value="20250803"/><high value="20250803"/></effectiveTime>
+              <value xsi:type="CD" code="Z39.1" codeSystem="2.16.840.1.113883.6.90"
+                     codeSystemName="ICD-10-CM" displayName="Z39-1"/>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
+                  <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+        </act>
+      </entry>
+      <entry typeCode="DRIV">
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+          <id root="9B05EE70-BBEA-48E8-B913-E6266E3F8590"/>
+          <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20240305"/><high value="20240305"/></effectiveTime>
+          <entryRelationship typeCode="SUBJ">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+              <id root="5A9DFE87-816D-4C80-9D9E-F9248B83217D"/>
+              <code code="55607006" codeSystem="2.16.840.1.113883.6.96" displayName="Problem"/>
+              <statusCode code="completed"/>
+              <effectiveTime><low value="20240305"/><high value="20240305"/></effectiveTime>
+              <value xsi:type="CD" code="Z39.2" codeSystem="2.16.840.1.113883.6.90"
+                     codeSystemName="ICD-10-CM" displayName="Z39-2"/>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
+                  <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+        </act>
+      </entry>
+      <entry typeCode="DRIV">
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+          <id root="04660643-2DB1-4AA5-AABF-2A9B52390751"/>
+          <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20250616"/><high value="20250616"/></effectiveTime>
+          <entryRelationship typeCode="SUBJ">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+              <id root="C705540D-B14E-4781-AF16-52418F85A26B"/>
+              <code code="55607006" codeSystem="2.16.840.1.113883.6.96" displayName="Problem"/>
+              <statusCode code="completed"/>
+              <effectiveTime><low value="20250616"/><high value="20250616"/></effectiveTime>
+              <value xsi:type="CD" code="F20.9" codeSystem="2.16.840.1.113883.6.90"
+                     codeSystemName="ICD-10-CM" displayName="F20-9"/>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
+                  <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+        </act>
+      </entry>
+      <entry typeCode="DRIV">
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+          <id root="9C5B23BD-EA1A-4276-937A-16F14B54E4BF"/>
+          <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20240819"/><high value="20240819"/></effectiveTime>
+          <entryRelationship typeCode="SUBJ">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+              <id root="42A809B0-6FCD-4365-92E4-2D491A9DB607"/>
+              <code code="55607006" codeSystem="2.16.840.1.113883.6.96" displayName="Problem"/>
+              <statusCode code="completed"/>
+              <effectiveTime><low value="20240819"/><high value="20240819"/></effectiveTime>
+              <value xsi:type="CD" code="F31.9" codeSystem="2.16.840.1.113883.6.90"
+                     codeSystemName="ICD-10-CM" displayName="F31-9"/>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
+                  <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+        </act>
+      </entry>
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+        <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" displayName="Medications"/>
+        <title>Medications</title>
+        <text>
+          <table border="1" width="100%">
+            <thead><tr><th>Medication</th><th>RxNorm</th><th>NDC</th><th>Frequency</th><th>Start</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>metformin 500mg</td><td>1441527</td><td>00062-1794-01</td><td>twice daily</td><td>May 22, 2023</td><td>Active</td></tr>
+              <tr><td>lisinopril 10mg</td><td>208813</td><td>00093-7268-01</td><td>once daily</td><td>April 17, 2025</td><td>Active</td></tr>
+              <tr><td>atorvastatin 40mg</td><td>723737</td><td>59762-0007-01</td><td>once daily</td><td>October 19, 2025</td><td>Active</td></tr>
+              <tr><td>amlodipine 5mg</td><td>476350</td><td>00169-4060-12</td><td>once daily</td><td>October 13, 2023</td><td>Active</td></tr>
+              <tr><td>albuterol 90mcg inhaler</td><td>2099121</td><td>50090-1989-00</td><td>as needed</td><td>September 12, 2024</td><td>Active</td></tr>
+            </tbody>
+          </table>
+          
+        </text>
+      <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2015-08-01"/>
+          <id root="27F884D2-7CAF-486D-8C82-46E321969F7A"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20230522"/><high value="20230820"/></effectiveTime>
+          <routeCode code="PO" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+          <consumable>
+            <manufacturedProduct classCode="MANU">
+              <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+              <manufacturedMaterial>
+                <code code="1441527" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="metformin 500mg">
+                  <translation code="00062-1794-01" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="metformin 500mg"/>
+                </code>
+              </manufacturedMaterial>
+            </manufacturedProduct>
+          </consumable>
+        </substanceAdministration>
+      </entry>
+      <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2015-08-01"/>
+          <id root="251BDE2F-02DD-454B-B636-DCB66412C02B"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20250417"/><high value="20250716"/></effectiveTime>
+          <routeCode code="PO" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+          <consumable>
+            <manufacturedProduct classCode="MANU">
+              <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+              <manufacturedMaterial>
+                <code code="208813" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="lisinopril 10mg">
+                  <translation code="00093-7268-01" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="lisinopril 10mg"/>
+                </code>
+              </manufacturedMaterial>
+            </manufacturedProduct>
+          </consumable>
+        </substanceAdministration>
+      </entry>
+      <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2015-08-01"/>
+          <id root="7969157F-4DFD-4E4E-AF0A-C92C7207FE3F"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20251019"/><high value="20260117"/></effectiveTime>
+          <routeCode code="PO" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+          <consumable>
+            <manufacturedProduct classCode="MANU">
+              <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+              <manufacturedMaterial>
+                <code code="723737" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="atorvastatin 40mg">
+                  <translation code="59762-0007-01" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="atorvastatin 40mg"/>
+                </code>
+              </manufacturedMaterial>
+            </manufacturedProduct>
+          </consumable>
+        </substanceAdministration>
+      </entry>
+      <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2015-08-01"/>
+          <id root="FDBEA2A1-EFB7-4CDF-A0DB-0C29625D91C1"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20231013"/><high value="20240111"/></effectiveTime>
+          <routeCode code="PO" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+          <consumable>
+            <manufacturedProduct classCode="MANU">
+              <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+              <manufacturedMaterial>
+                <code code="476350" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="amlodipine 5mg">
+                  <translation code="00169-4060-12" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="amlodipine 5mg"/>
+                </code>
+              </manufacturedMaterial>
+            </manufacturedProduct>
+          </consumable>
+        </substanceAdministration>
+      </entry>
+      <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2015-08-01"/>
+          <id root="A1BA6A07-3F15-4754-BF70-286BA2C687D1"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20240912"/><high value="20241211"/></effectiveTime>
+          <routeCode code="INH" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+          <consumable>
+            <manufacturedProduct classCode="MANU">
+              <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+              <manufacturedMaterial>
+                <code code="2099121" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="albuterol 90mcg inhaler">
+                  <translation code="50090-1989-00" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="albuterol 90mcg inhaler"/>
+                </code>
+              </manufacturedMaterial>
+            </manufacturedProduct>
+          </consumable>
+        </substanceAdministration>
+      </entry>
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+        <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" displayName="Relevant Diagnostic Tests"/>
+        <title>Results</title>
+        <text>
+          <table border="1" width="100%">
+            <thead><tr><th>Test</th><th>LOINC</th><th>Result</th><th>Unit</th><th>Date</th></tr></thead>
+            <tbody>
+              <tr><td>Pregnancy status</td><td>82810-3</td><td>No growth</td><td>result</td><td>November 12, 2023</td></tr>
+              <tr><td>Prenatal visit</td><td>55277-8</td><td>Negative</td><td>result</td><td>February 11, 2025</td></tr>
+              <tr><td>Mental status exam</td><td>55757-9</td><td>No growth</td><td>result</td><td>July 08, 2025</td></tr>
+              <tr><td>PHQ-9 score</td><td>72133-2</td><td>No growth</td><td>score</td><td>March 31, 2025</td></tr>
+              <tr><td>HbA1c</td><td>4548-4</td><td><content styleCode="Bold">RESULT MISSING - NOT RECEIVED</content></td><td>%</td><td>March 17, 2023</td></tr>
+              <tr><td>HbA1c IFCC</td><td>17855-8</td><td>9.9</td><td>mmol/mol</td><td>January 06, 2025</td></tr>
+              <tr><td>HbA1c method</td><td>41995-2</td><td>Negative</td><td>result</td><td>June 24, 2023</td></tr>
+            </tbody>
+          </table>
+          
+          <paragraph><content styleCode="Bold">Lab Status:</content> HbA1c was ordered during this encounter. Laboratory report has not been received. Result is pending - follow-up with laboratory required.</paragraph>
+        </text>
+      <entry typeCode="DRIV">
+        <organizer classCode="BATTERY" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+          <id root="0D38628F-7883-43B8-8B61-7C69DBC078A9"/>
+          <code code="82810-3" codeSystem="2.16.840.1.113883.6.1" displayName="Pregnancy status"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20231112"/><high value="20231112"/></effectiveTime>
+          <component>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+              <id root="1649FE4C-53D0-43EA-8537-83B651EEBA1E"/>
+              <code code="82810-3" codeSystem="2.16.840.1.113883.6.1" displayName="Pregnancy status"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20231112"/>
+              <value xsi:type="ST">No growth</value>
+              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+            </observation>
+          </component>
+        </organizer>
+      </entry>
+      <entry typeCode="DRIV">
+        <organizer classCode="BATTERY" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+          <id root="353F02B5-B916-4735-BFDF-90ADE5BBBE8D"/>
+          <code code="55277-8" codeSystem="2.16.840.1.113883.6.1" displayName="Prenatal visit"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20250211"/><high value="20250211"/></effectiveTime>
+          <component>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+              <id root="A52714FE-4DA9-4429-B49F-52FC858D7E14"/>
+              <code code="55277-8" codeSystem="2.16.840.1.113883.6.1" displayName="Prenatal visit"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20250211"/>
+              <value xsi:type="ST">Negative</value>
+              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+            </observation>
+          </component>
+        </organizer>
+      </entry>
+      <entry typeCode="DRIV">
+        <organizer classCode="BATTERY" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+          <id root="491F8B6B-72DE-4AEB-95AA-C6EEF655EAA0"/>
+          <code code="55757-9" codeSystem="2.16.840.1.113883.6.1" displayName="Mental status exam"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20250708"/><high value="20250708"/></effectiveTime>
+          <component>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+              <id root="D7CA58F3-6D28-4665-ADA4-8FE79CDE89C1"/>
+              <code code="55757-9" codeSystem="2.16.840.1.113883.6.1" displayName="Mental status exam"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20250708"/>
+              <value xsi:type="ST">No growth</value>
+              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+            </observation>
+          </component>
+        </organizer>
+      </entry>
+      <entry typeCode="DRIV">
+        <organizer classCode="BATTERY" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+          <id root="DF0BA454-8576-4565-8501-D1D422FB9399"/>
+          <code code="72133-2" codeSystem="2.16.840.1.113883.6.1" displayName="PHQ-9 score"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20250331"/><high value="20250331"/></effectiveTime>
+          <component>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+              <id root="8A8099FB-9C90-4AF7-A427-709F0916ED74"/>
+              <code code="72133-2" codeSystem="2.16.840.1.113883.6.1" displayName="PHQ-9 score"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20250331"/>
+              <value xsi:type="ST">No growth</value>
+              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+            </observation>
+          </component>
+        </organizer>
+      </entry>
+      <entry typeCode="DRIV">
+        <organizer classCode="BATTERY" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+          <id root="3338E159-A813-40BD-87C6-573A03C0D2C8"/>
+          <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="HbA1c"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20230317"/><high value="20230317"/></effectiveTime>
+          <component>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+              <id root="478A82DB-A704-4255-A841-A44B1BFDF5DA"/>
+              <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="HbA1c"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20230317"/>
+              <value xsi:type="PQ" nullFlavor="NI"/>
+              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+              <referenceRange>
+                <observationRange><text>Less than 7 percent</text></observationRange>
+              </referenceRange>
+            </observation>
+          </component>
+        </organizer>
+      </entry>
+      <entry typeCode="DRIV">
+        <organizer classCode="BATTERY" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+          <id root="C03E5E68-958D-446F-AEE5-4C4588E2C02F"/>
+          <code code="17855-8" codeSystem="2.16.840.1.113883.6.1" displayName="HbA1c IFCC"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20250106"/><high value="20250106"/></effectiveTime>
+          <component>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+              <id root="AA31E3CB-A6FB-46F0-8F45-B9F2E9BDD8F8"/>
+              <code code="17855-8" codeSystem="2.16.840.1.113883.6.1" displayName="HbA1c IFCC"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20250106"/>
+              <value xsi:type="PQ" value="9.9" unit="mmol/mol"/>
+              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+            </observation>
+          </component>
+        </organizer>
+      </entry>
+      <entry typeCode="DRIV">
+        <organizer classCode="BATTERY" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+          <id root="1F100F15-B593-4857-AC75-3F5AEB5AFD05"/>
+          <code code="41995-2" codeSystem="2.16.840.1.113883.6.1" displayName="HbA1c method"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20230624"/><high value="20230624"/></effectiveTime>
+          <component>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+              <id root="F9D8CD1B-EAEF-42CC-8FBB-5A7F8C3AECEB"/>
+              <code code="41995-2" codeSystem="2.16.840.1.113883.6.1" displayName="HbA1c method"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20230624"/>
+              <value xsi:type="ST">Negative</value>
+              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+            </observation>
+          </component>
+        </organizer>
+      </entry>
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2015-08-01"/>
+        <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" displayName="Encounters"/>
+        <title>Encounters</title>
+        <text>
+          <table border="1" width="100%">
+            <thead><tr><th>CPT</th><th>Type</th><th>Provider</th><th>Facility</th><th>Date</th></tr></thead>
+            <tbody>
+              <tr><td>59400</td><td>Ambulatory</td><td>Frank Thompson</td><td>Regional Medical Center</td><td>May 23, 2024</td></tr>
+              <tr><td>59425</td><td>Ambulatory</td><td>Frank Thompson</td><td>Primary Care Associates</td><td>March 29, 2025</td></tr>
+              <tr><td>59426</td><td>Inpatient</td><td>Brian Patel</td><td>University Hospital</td><td>January 22, 2023</td></tr>
+              <tr><td>59430</td><td>Emergency</td><td>David Kim</td><td>Specialty Clinic</td><td>November 11, 2025</td></tr>
+            </tbody>
+          </table>
+        </text>
+      <entry typeCode="DRIV">
+        <encounter classCode="ENC" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
+          <id root="76B2E80D-228A-4A6E-AC62-5234EF8C4300"/>
+          <code code="59400" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" displayName="Encounter Visit"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20240523"/><high value="20240523"/></effectiveTime>
+          <performer>
+            <assignedEntity>
+              <id root="2.16.840.1.113883.4.6" extension="NPI6789012"/>
+              <assignedPerson><name>Frank Thompson</name></assignedPerson>
+              <representedOrganization><name>Regional Medical Center</name></representedOrganization>
+            </assignedEntity>
+          </performer>
+          <participant typeCode="LOC">
+            <participantRole classCode="SDLOC">
+              <playingEntity classCode="PLC"><name>Regional Medical Center</name></playingEntity>
+            </participantRole>
+          </participant>
+        </encounter>
+      </entry>
+      <entry typeCode="DRIV">
+        <encounter classCode="ENC" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
+          <id root="B43991D0-6090-4B0B-9F46-7A708A1C2E1D"/>
+          <code code="59425" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" displayName="Encounter Visit"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20250329"/><high value="20250329"/></effectiveTime>
+          <performer>
+            <assignedEntity>
+              <id root="2.16.840.1.113883.4.6" extension="NPI6789012"/>
+              <assignedPerson><name>Frank Thompson</name></assignedPerson>
+              <representedOrganization><name>Primary Care Associates</name></representedOrganization>
+            </assignedEntity>
+          </performer>
+          <participant typeCode="LOC">
+            <participantRole classCode="SDLOC">
+              <playingEntity classCode="PLC"><name>Primary Care Associates</name></playingEntity>
+            </participantRole>
+          </participant>
+        </encounter>
+      </entry>
+      <entry typeCode="DRIV">
+        <encounter classCode="ENC" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
+          <id root="EDAD08DF-FD7A-4A69-9083-184CA479A675"/>
+          <code code="59426" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" displayName="Encounter Visit"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20230122"/><high value="20230122"/></effectiveTime>
+          <performer>
+            <assignedEntity>
+              <id root="2.16.840.1.113883.4.6" extension="NPI2345678"/>
+              <assignedPerson><name>Brian Patel</name></assignedPerson>
+              <representedOrganization><name>University Hospital</name></representedOrganization>
+            </assignedEntity>
+          </performer>
+          <participant typeCode="LOC">
+            <participantRole classCode="SDLOC">
+              <playingEntity classCode="PLC"><name>University Hospital</name></playingEntity>
+            </participantRole>
+          </participant>
+        </encounter>
+      </entry>
+      <entry typeCode="DRIV">
+        <encounter classCode="ENC" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
+          <id root="52BF7B18-B638-4C8B-92C5-D74F051B6838"/>
+          <code code="59430" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" displayName="Encounter Visit"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20251111"/><high value="20251111"/></effectiveTime>
+          <performer>
+            <assignedEntity>
+              <id root="2.16.840.1.113883.4.6" extension="NPI4567890"/>
+              <assignedPerson><name>David Kim</name></assignedPerson>
+              <representedOrganization><name>Specialty Clinic</name></representedOrganization>
+            </assignedEntity>
+          </performer>
+          <participant typeCode="LOC">
+            <participantRole classCode="SDLOC">
+              <playingEntity classCode="PLC"><name>Specialty Clinic</name></playingEntity>
+            </participantRole>
+          </participant>
+        </encounter>
+      </entry>
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.2.1" extension="2015-08-01"/>
+        <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" displayName="Immunizations"/>
+        <title>Immunizations</title>
+        <text>
+          <table border="1" width="100%">
+            <thead><tr><th>Vaccine</th><th>CVX</th><th>System</th><th>Manufacturer</th><th>Lot</th><th>Date</th></tr></thead>
+            <tbody>
+              <tr><td>Influenza seasonal</td><td>88</td><td>CVX</td><td>Novavax</td><td>LOT585556</td><td>May 21, 2024</td></tr>
+              <tr><td>MMR</td><td>03</td><td>CVX</td><td>GSK</td><td>LOT258067</td><td>August 11, 2025</td></tr>
+              <tr><td>PCV13</td><td>133</td><td>CVX</td><td>Pfizer</td><td>LOT606222</td><td>April 10, 2020</td></tr>
+              <tr><td>MMRV</td><td>94</td><td>CVX</td><td>Pfizer</td><td>LOT536181</td><td>April 25, 2023</td></tr>
+              <tr><td>HPV 9-valent</td><td>137</td><td>CVX</td><td>AstraZeneca</td><td>LOT971699</td><td>April 20, 2021</td></tr>
+            </tbody>
+          </table>
+        </text>
+      <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+          <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
+          <id root="183225FE-26AE-4B03-9FE7-2297A8C329C1"/>
+          <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4"/>
+          <statusCode code="completed"/>
+          <effectiveTime value="20240521"/>
+          <routeCode code="IM" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Intramuscular"/>
+          <doseQuantity value="1" unit="mL"/>
+          <consumable>
+            <manufacturedProduct classCode="MANU">
+              <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
+              <manufacturedMaterial>
+                <code code="88" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX" displayName="Influenza seasonal"/>
+                <lotNumberText>LOT585556</lotNumberText>
+              </manufacturedMaterial>
+              <manufacturerOrganization><name>Novavax</name></manufacturerOrganization>
+            </manufacturedProduct>
+          </consumable>
+        </substanceAdministration>
+      </entry>
+      <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+          <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
+          <id root="62ABBB90-FA94-4CCB-A459-4D577C7519AD"/>
+          <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4"/>
+          <statusCode code="completed"/>
+          <effectiveTime value="20250811"/>
+          <routeCode code="IM" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Intramuscular"/>
+          <doseQuantity value="1" unit="mL"/>
+          <consumable>
+            <manufacturedProduct classCode="MANU">
+              <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
+              <manufacturedMaterial>
+                <code code="03" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX" displayName="MMR"/>
+                <lotNumberText>LOT258067</lotNumberText>
+              </manufacturedMaterial>
+              <manufacturerOrganization><name>GSK</name></manufacturerOrganization>
+            </manufacturedProduct>
+          </consumable>
+        </substanceAdministration>
+      </entry>
+      <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+          <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
+          <id root="DD1FB820-9539-4A5E-A5FF-F691215E26F6"/>
+          <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4"/>
+          <statusCode code="completed"/>
+          <effectiveTime value="20200410"/>
+          <routeCode code="IM" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Intramuscular"/>
+          <doseQuantity value="1" unit="mL"/>
+          <consumable>
+            <manufacturedProduct classCode="MANU">
+              <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
+              <manufacturedMaterial>
+                <code code="133" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX" displayName="PCV13"/>
+                <lotNumberText>LOT606222</lotNumberText>
+              </manufacturedMaterial>
+              <manufacturerOrganization><name>Pfizer</name></manufacturerOrganization>
+            </manufacturedProduct>
+          </consumable>
+        </substanceAdministration>
+      </entry>
+      <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+          <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
+          <id root="5A131CA6-1CB5-4FAA-8EFD-5CF065DFD126"/>
+          <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4"/>
+          <statusCode code="completed"/>
+          <effectiveTime value="20230425"/>
+          <routeCode code="IM" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Intramuscular"/>
+          <doseQuantity value="1" unit="mL"/>
+          <consumable>
+            <manufacturedProduct classCode="MANU">
+              <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
+              <manufacturedMaterial>
+                <code code="94" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX" displayName="MMRV"/>
+                <lotNumberText>LOT536181</lotNumberText>
+              </manufacturedMaterial>
+              <manufacturerOrganization><name>Pfizer</name></manufacturerOrganization>
+            </manufacturedProduct>
+          </consumable>
+        </substanceAdministration>
+      </entry>
+      <entry typeCode="DRIV">
+        <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+          <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
+          <id root="C5ED65C2-426E-417E-9231-90814ADBD232"/>
+          <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4"/>
+          <statusCode code="completed"/>
+          <effectiveTime value="20210420"/>
+          <routeCode code="IM" codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Intramuscular"/>
+          <doseQuantity value="1" unit="mL"/>
+          <consumable>
+            <manufacturedProduct classCode="MANU">
+              <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
+              <manufacturedMaterial>
+                <code code="137" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX" displayName="HPV 9-valent"/>
+                <lotNumberText>LOT971699</lotNumberText>
+              </manufacturedMaterial>
+              <manufacturerOrganization><name>AstraZeneca</name></manufacturerOrganization>
+            </manufacturedProduct>
+          </consumable>
+        </substanceAdministration>
+      </entry>
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+        <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" displayName="Procedures"/>
+        <title>Procedures</title>
+        <text>
+          <table border="1" width="100%">
+            <thead><tr><th>Procedure</th><th>Code System</th><th>Code</th><th>Provider</th><th>Date</th></tr></thead>
+            <tbody>
+              <tr><td>CPT Procedure</td><td>CPT-4</td><td>59400</td><td>Frank Thompson</td><td>October 18, 2023</td></tr>
+              <tr><td>CPT Procedure</td><td>CPT-4</td><td>59425</td><td>Frank Thompson</td><td>September 30, 2024</td></tr>
+              <tr><td>CPT Procedure</td><td>CPT-4</td><td>59426</td><td>David Kim</td><td>July 21, 2025</td></tr>
+              <tr><td>HCPCS Procedure</td><td>HCPCS</td><td>H1000</td><td>Henry Moore</td><td>December 03, 2025</td></tr>
+              <tr><td>HCPCS Procedure</td><td>HCPCS</td><td>H1001</td><td>Henry Moore</td><td>December 14, 2024</td></tr>
+              <tr><td>Clinical Finding/Procedure</td><td>SNOMED-CT</td><td>169561006</td><td>Henry Moore</td><td>July 19, 2023</td></tr>
+              <tr><td>Clinical Finding/Procedure</td><td>SNOMED-CT</td><td>118215003</td><td>Frank Thompson</td><td>July 15, 2025</td></tr>
+            </tbody>
+          </table>
+        </text>
+      <entry typeCode="DRIV">
+        <procedure classCode="PROC" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+          <id root="2CD83EAB-9FC0-40F0-9256-B885AB54E040"/>
+          <code code="59400" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" displayName="CPT Procedure"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20231018"/><high value="20231018"/></effectiveTime>
+          <performer>
+            <assignedEntity>
+              <id root="2.16.840.1.113883.4.6" extension="NPI6789012"/>
+              <assignedPerson><name>Frank Thompson</name></assignedPerson>
+            </assignedEntity>
+          </performer>
+        </procedure>
+      </entry>
+      <entry typeCode="DRIV">
+        <procedure classCode="PROC" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+          <id root="83325E4F-AC8A-42D7-8678-E83B44019221"/>
+          <code code="59425" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" displayName="CPT Procedure"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20240930"/><high value="20240930"/></effectiveTime>
+          <performer>
+            <assignedEntity>
+              <id root="2.16.840.1.113883.4.6" extension="NPI6789012"/>
+              <assignedPerson><name>Frank Thompson</name></assignedPerson>
+            </assignedEntity>
+          </performer>
+        </procedure>
+      </entry>
+      <entry typeCode="DRIV">
+        <procedure classCode="PROC" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+          <id root="FEB7D8C1-DAD1-46C2-94E0-36185AB21EAF"/>
+          <code code="59426" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4" displayName="CPT Procedure"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20250721"/><high value="20250721"/></effectiveTime>
+          <performer>
+            <assignedEntity>
+              <id root="2.16.840.1.113883.4.6" extension="NPI4567890"/>
+              <assignedPerson><name>David Kim</name></assignedPerson>
+            </assignedEntity>
+          </performer>
+        </procedure>
+      </entry>
+      <entry typeCode="DRIV">
+        <procedure classCode="PROC" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+          <id root="2BCBECD4-D5CF-4B17-BD11-020C62C19854"/>
+          <code code="H1000" codeSystem="2.16.840.1.113883.6.285" codeSystemName="HCPCS" displayName="HCPCS Procedure"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20251203"/><high value="20251203"/></effectiveTime>
+          <performer>
+            <assignedEntity>
+              <id root="2.16.840.1.113883.4.6" extension="NPI8901234"/>
+              <assignedPerson><name>Henry Moore</name></assignedPerson>
+            </assignedEntity>
+          </performer>
+        </procedure>
+      </entry>
+      <entry typeCode="DRIV">
+        <procedure classCode="PROC" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+          <id root="E26EE8DF-1E35-44A7-8B4A-41E06A62B22C"/>
+          <code code="H1001" codeSystem="2.16.840.1.113883.6.285" codeSystemName="HCPCS" displayName="HCPCS Procedure"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20241214"/><high value="20241214"/></effectiveTime>
+          <performer>
+            <assignedEntity>
+              <id root="2.16.840.1.113883.4.6" extension="NPI8901234"/>
+              <assignedPerson><name>Henry Moore</name></assignedPerson>
+            </assignedEntity>
+          </performer>
+        </procedure>
+      </entry>
+      <entry typeCode="DRIV">
+        <procedure classCode="PROC" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+          <id root="C6852F48-BABE-4351-AEC9-88A036ED0400"/>
+          <code code="169561006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Clinical Finding/Procedure"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20230719"/><high value="20230719"/></effectiveTime>
+          <performer>
+            <assignedEntity>
+              <id root="2.16.840.1.113883.4.6" extension="NPI8901234"/>
+              <assignedPerson><name>Henry Moore</name></assignedPerson>
+            </assignedEntity>
+          </performer>
+        </procedure>
+      </entry>
+      <entry typeCode="DRIV">
+        <procedure classCode="PROC" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+          <id root="0C52DC28-8E18-4E5F-AF0D-C99C5CA9473A"/>
+          <code code="118215003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Clinical Finding/Procedure"/>
+          <statusCode code="completed"/>
+          <effectiveTime><low value="20250715"/><high value="20250715"/></effectiveTime>
+          <performer>
+            <assignedEntity>
+              <id root="2.16.840.1.113883.4.6" extension="NPI6789012"/>
+              <assignedPerson><name>Frank Thompson</name></assignedPerson>
+            </assignedEntity>
+          </performer>
+        </procedure>
+      </entry>
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+        <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" displayName="Vital Signs"/>
+        <title>Vital Signs</title>
+        <text>
+          <table border="1" width="100%">
+            <thead><tr><th>Measurement</th><th>Value</th><th>Unit</th><th>Date</th></tr></thead>
+            <tbody>
+              <tr><td>Systolic BP</td><td>129</td><td>mmHg</td><td>May 18, 2023</td></tr>
+              <tr><td>Diastolic BP</td><td>70</td><td>mmHg</td><td>May 18, 2023</td></tr>
+              <tr><td>Heart Rate</td><td>100</td><td>bpm</td><td>May 18, 2023</td></tr>
+              <tr><td>Respiratory Rate</td><td>15</td><td>/min</td><td>May 18, 2023</td></tr>
+              <tr><td>Temperature</td><td>36.3</td><td>Celsius</td><td>May 18, 2023</td></tr>
+              <tr><td>Weight</td><td>80.7</td><td>kg</td><td>May 18, 2023</td></tr>
+              <tr><td>Height</td><td>159.4</td><td>cm</td><td>May 18, 2023</td></tr>
+              <tr><td>BMI</td><td>31.8</td><td>kg/m2</td><td>May 18, 2023</td></tr>
+            </tbody>
+          </table>
+          
+        </text>
+        <entry typeCode="DRIV">
+          <organizer classCode="CLUSTER" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+            <id root="FF6130DC-2707-450B-9783-ED32434B0925"/>
+            <code code="46680005" codeSystem="2.16.840.1.113883.6.96" displayName="Vital signs"/>
+            <statusCode code="completed"/>
+            <effectiveTime value="20230518"/>
+            <component>
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                <id root="B2D4E621-99B1-481D-A277-1D1DFD177CC0"/>
+                <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="Systolic BP"/>
+                <statusCode code="completed"/>
+                <effectiveTime value="20230518"/>
+                <value xsi:type="PQ" value="129" unit="mmHg"/>
+              </observation>
+            </component>
+            <component>
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                <id root="8A87DA64-E30D-45C2-97AA-64B5EA130064"/>
+                <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diastolic BP"/>
+                <statusCode code="completed"/>
+                <effectiveTime value="20230518"/>
+                <value xsi:type="PQ" value="70" unit="mmHg"/>
+              </observation>
+            </component>
+            <component>
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                <id root="7531B6DF-E944-44D5-B8EC-89DDF2CAB840"/>
+                <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" displayName="Heart Rate"/>
+                <statusCode code="completed"/>
+                <effectiveTime value="20230518"/>
+                <value xsi:type="PQ" value="100" unit="bpm"/>
+              </observation>
+            </component>
+            <component>
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                <id root="D0A7FCCA-8B9B-498D-86CC-CEA27A352179"/>
+                <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" displayName="Respiratory Rate"/>
+                <statusCode code="completed"/>
+                <effectiveTime value="20230518"/>
+                <value xsi:type="PQ" value="15" unit="/min"/>
+              </observation>
+            </component>
+            <component>
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                <id root="7CD89CCC-FF47-46B7-BD17-1C96F43A5A59"/>
+                <code code="8310-5" codeSystem="2.16.840.1.113883.6.1" displayName="Body Temperature"/>
+                <statusCode code="completed"/>
+                <effectiveTime value="20230518"/>
+                <value xsi:type="PQ" value="36.3" unit="Cel"/>
+              </observation>
+            </component>
+            <component>
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                <id root="56F4F8DB-A6E5-4E66-9A9C-11EC215B4D89"/>
+                <code code="29463-7" codeSystem="2.16.840.1.113883.6.1" displayName="Body Weight"/>
+                <statusCode code="completed"/>
+                <effectiveTime value="20230518"/>
+                <value xsi:type="PQ" value="80.7" unit="kg"/>
+              </observation>
+            </component>
+            <component>
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                <id root="4AA98A9C-65A7-40E9-A431-4034E309EE69"/>
+                <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" displayName="Body Height"/>
+                <statusCode code="completed"/>
+                <effectiveTime value="20230518"/>
+                <value xsi:type="PQ" value="159.4" unit="cm"/>
+              </observation>
+            </component>
+            <component>
+              <observation classCode="OBS" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                <id root="6BC09394-6E5E-4845-BA1F-A0D43BE62661"/>
+                <code code="39156-5" codeSystem="2.16.840.1.113883.6.1" displayName="BMI"/>
+                <statusCode code="completed"/>
+                <effectiveTime value="20230518"/>
+                <value xsi:type="PQ" value="31.8" unit="kg/m2"/>
+              </observation>
+            </component>
+          </organizer>
+        </entry>
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+        <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History"/>
+        <title>Social History</title>
+        <text>
+          <table border="1" width="100%">
+            <thead><tr><th>Factor</th><th>Status</th><th>Date</th></tr></thead>
+            <tbody>
+              <tr><td>Smoking Status</td><td>Former smoker</td><td>December 03, 2023</td></tr>
+              <tr><td>Alcohol Use</td><td>Occasional social use</td><td>December 03, 2023</td></tr>
+              <tr><td>Exercise Level</td><td>Light activity 1-2x/week</td><td>December 03, 2023</td></tr>
+            </tbody>
+          </table>
+        </text>
+        <entry typeCode="DRIV">
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.78" extension="2014-06-09"/>
+            <id root="CC9FCD11-8C2E-4810-8039-CBD3DE1DBE80"/>
+            <code code="72166-2" codeSystem="2.16.840.1.113883.6.1" displayName="Tobacco use status"/>
+            <statusCode code="completed"/>
+            <effectiveTime value="20231203"/>
+            <value xsi:type="CD" code="266919005" codeSystem="2.16.840.1.113883.6.96"
+                   displayName="Former smoker"/>
+          </observation>
+        </entry>
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+        <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" displayName="Allergies"/>
+        <title>Allergies and Adverse Reactions</title>
+        <text>
+          <table border="1" width="100%">
+            <thead><tr><th>Allergen</th><th>RxNorm</th><th>System</th><th>Type</th><th>Reaction</th><th>Onset</th></tr></thead>
+            <tbody>
+              <tr><td>Sulfa drugs</td><td>7980</td><td>RxNorm</td><td>Drug Allergy</td><td>Anaphylaxis</td><td>September 30, 2020</td></tr>
+              <tr><td>Amoxicillin</td><td>704</td><td>RxNorm</td><td>Drug Allergy</td><td>Urticaria</td><td>March 08, 2015</td></tr>
+            </tbody>
+          </table>
+        </text>
+      <entry typeCode="DRIV">
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
+          <id root="48E0DCB6-3DEA-4C00-A6E3-FCF973EE4006"/>
+          <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20200930"/><high value="20200930"/></effectiveTime>
+          <entryRelationship typeCode="SUBJ">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
+              <id root="3F4A6FDD-6DA3-42BF-885F-9898783219AD"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+              <statusCode code="completed"/>
+              <effectiveTime><low value="20200930"/><high value="20200930"/></effectiveTime>
+              <value xsi:type="CD" code="416098002" codeSystem="2.16.840.1.113883.6.96" displayName="Drug allergy"/>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU">
+                  <playingEntity classCode="MMAT">
+                    <code code="7980" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Sulfa drugs"/>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.9" extension="2014-06-09"/>
+                  <id root="4D94E386-7FD8-4A7C-9B8C-75C06E8AA4CE"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" code="271807003" codeSystem="2.16.840.1.113883.6.96" displayName="Anaphylaxis"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+        </act>
+      </entry>
+      <entry typeCode="DRIV">
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
+          <id root="22BFBF84-6384-445C-B0AC-CA78557934B1"/>
+          <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+          <statusCode code="active"/>
+          <effectiveTime><low value="20150308"/><high value="20150308"/></effectiveTime>
+          <entryRelationship typeCode="SUBJ">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
+              <id root="576AE39E-5055-4BFD-9C35-2EE640E3A424"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+              <statusCode code="completed"/>
+              <effectiveTime><low value="20150308"/><high value="20150308"/></effectiveTime>
+              <value xsi:type="CD" code="416098002" codeSystem="2.16.840.1.113883.6.96" displayName="Drug allergy"/>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU">
+                  <playingEntity classCode="MMAT">
+                    <code code="704" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Amoxicillin"/>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.9" extension="2014-06-09"/>
+                  <id root="16518E01-5166-43F6-8282-7799EAB02287"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" code="271807003" codeSystem="2.16.840.1.113883.6.96" displayName="Urticaria"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entryRelationship>
+        </act>
+      </entry>
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+        <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" displayName="Plan of Treatment"/>
+        <title>Plan of Treatment</title>
+        <text>
+          <paragraph>HEDIS MY2025 measures addressed in this document per NCQA value sets:</paragraph>
+          <list>
+            <item><content styleCode="Bold">PPC:</content> Prenatal and Postpartum Care - Compliant MY2025</item>
+            <item><content styleCode="Bold">FUH:</content> Follow-Up After Mental Illness Hospitalization - Compliant MY2025</item>
+            <item><content styleCode="Bold">HBD:</content> HbA1c Control for Diabetes - Compliant MY2025</item>
+            <item><content styleCode="Bold">BCS:</content> Breast Cancer Screening - Compliant MY2025</item>
+            <item><content styleCode="Bold">W34:</content> Well-Child Visits - Compliant MY2025</item>
+            <item><content styleCode="Bold">OHD:</content> Osteoporosis Management in Women - Compliant MY2025</item>
+            <item><content styleCode="Bold">COA:</content> Care for Older Adults - Compliant MY2025</item>
+            <item><content styleCode="Bold">SPC:</content> Statin Therapy for Cardiovascular Disease - Compliant MY2025</item>
+            <item><content styleCode="Bold">COL:</content> Colorectal Cancer Screening - Compliant MY2025</item>
+            <item><content styleCode="Bold">KED:</content> Kidney Health Evaluation Diabetes - Compliant MY2025</item>
+            <item><content styleCode="Bold">AMR:</content> Asthma Medication Ratio - Compliant MY2025</item>
+            <item><content styleCode="Bold">CCS:</content> Cervical Cancer Screening - Compliant MY2025</item>
+            <item><content styleCode="Bold">EED:</content> Eye Exam for Patients with Diabetes - Compliant MY2025</item>
+            <item><content styleCode="Bold">ADD:</content> ADHD Medication Management - Compliant MY2025</item>
+            <item><content styleCode="Bold">PCE:</content> Potentially Harmful Drug-Disease Interactions - Compliant MY2025</item>
+            <item><content styleCode="Bold">MRP:</content> Medication Reconciliation Post-Discharge - Compliant MY2025</item>
+            <item><content styleCode="Bold">AWC:</content> Adolescent Well-Care Visit - Compliant MY2025</item>
+            <item><content styleCode="Bold">CBP:</content> Controlling High Blood Pressure - Compliant MY2025</item>
+            <item><content styleCode="Bold">DAE:</content> Drug Interactions in Older Adults - Compliant MY2025</item>
+            <item><content styleCode="Bold">IMA:</content> Immunizations for Adolescents - Compliant MY2025</item>
+            <item><content styleCode="Bold">CDC:</content> Comprehensive Diabetes Care - Compliant MY2025</item>
+          </list>
+        </text>
+      </section>
+    </component>
+    <component>
+      <section>
+        <templateId root="2.16.840.1.113883.10.20.22.2.65" extension="2016-11-01"/>
+        <code code="75310-3" codeSystem="2.16.840.1.113883.6.1" displayName="Health concerns document"/>
+        <title>HEDIS Measure Compliance - Measurement Year 2025</title>
+        <text>
+          <paragraph>The following HEDIS measures from NCQA MY2025 value sets are addressed:</paragraph>
+          <list>
+            <item><content styleCode="Bold">PPC:</content> Prenatal and Postpartum Care</item>
+            <item><content styleCode="Bold">FUH:</content> Follow-Up After Mental Illness Hospitalization</item>
+            <item><content styleCode="Bold">HBD:</content> HbA1c Control for Diabetes</item>
+            <item><content styleCode="Bold">BCS:</content> Breast Cancer Screening</item>
+            <item><content styleCode="Bold">W34:</content> Well-Child Visits</item>
+            <item><content styleCode="Bold">OHD:</content> Osteoporosis Management in Women</item>
+            <item><content styleCode="Bold">COA:</content> Care for Older Adults</item>
+            <item><content styleCode="Bold">SPC:</content> Statin Therapy for Cardiovascular Disease</item>
+            <item><content styleCode="Bold">COL:</content> Colorectal Cancer Screening</item>
+            <item><content styleCode="Bold">KED:</content> Kidney Health Evaluation Diabetes</item>
+            <item><content styleCode="Bold">AMR:</content> Asthma Medication Ratio</item>
+            <item><content styleCode="Bold">CCS:</content> Cervical Cancer Screening</item>
+            <item><content styleCode="Bold">EED:</content> Eye Exam for Patients with Diabetes</item>
+            <item><content styleCode="Bold">ADD:</content> ADHD Medication Management</item>
+            <item><content styleCode="Bold">PCE:</content> Potentially Harmful Drug-Disease Interactions</item>
+            <item><content styleCode="Bold">MRP:</content> Medication Reconciliation Post-Discharge</item>
+            <item><content styleCode="Bold">AWC:</content> Adolescent Well-Care Visit</item>
+            <item><content styleCode="Bold">CBP:</content> Controlling High Blood Pressure</item>
+            <item><content styleCode="Bold">DAE:</content> Drug Interactions in Older Adults</item>
+            <item><content styleCode="Bold">IMA:</content> Immunizations for Adolescents</item>
+            <item><content styleCode="Bold">CDC:</content> Comprehensive Diabetes Care</item>
+          </list>
+        </text>
+      </section>
+    </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
